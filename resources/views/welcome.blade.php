@@ -39,6 +39,7 @@
                 position: absolute;
                 right: 10px;
                 top: 18px;
+				
             }
 
             .content {
@@ -51,12 +52,30 @@
 
             .links > a {
                 color: #000;
-                padding: 0 25px;
-                font-size: 12px;
+				padding: 0 25px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+				border: 1px solid;
+				border-color: #000000;
+				background-color: #21DC00;
+				
+            }
+			
+			.links > a:hover {
+                color: #000;
+				padding: 0 25px;
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+				border: 1px solid;
+				border-color: #000000;
+				background-color: #fff;
+				
             }
 
             .m-b-md {
@@ -84,7 +103,7 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Registrar</a>
+                        <a href="{{ url('/register_clases') }}">Registrar</a>
                     @endif
                 </div>
             @endif
@@ -93,15 +112,11 @@
 			
 			
                 <div class="title m-b-md">
-                    Sistema de Voto
+                   <h4> Sistema de Voto </h4>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">M&aacutes</a>
-                    <a href="https://laracasts.com">bien</a>
-                    <a href="https://laravel-news.com">lokita</a>
-                    <a href="https://forge.laravel.com">el peluca</a>
-                    <a href="https://github.com/laravel/laravel">sape!</a>
+                <div>
+                    <h2> El basti&oacuten digital de la democracia </h2>
                 </div>
             </div>
         </div>
