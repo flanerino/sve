@@ -14,10 +14,10 @@ class TablaPadron extends Migration
     public function up()
     {
         Schema::create('padron', function (Blueprint $table) {
-            $table->increments('id_padron');
+            $table->increments('id');
             $table->string('nombre');
             $table->string('apellido');
-            $table->boolean('conf_voto');
+            $table->boolean('voto');
             $table->timestamps();
         });
     }
